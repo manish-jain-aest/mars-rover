@@ -27,14 +27,3 @@ MMRMMRMRRM
 Expected Output:
 1 3 N
 5 1 E
-
-Additional instructions
-	•	Please submit the solution that displays all the steps you have undertaken.
-	•	Please include the version of Xcode and Swift that you are using to write the code
-	•	Please ensure we can build and run the application and that there are no compile errors
-	•	The solution should be written in swift and be able to be run in the simulator (e.g, any user input required can use just a simple textbox. Any output should be displayed on a label or text element of your choice.
-	•	Add a GUI that displays the Rovers and updates as it processes the commands
-	•	Please ensure that your application correctly accepts the test input, and also correctly outputs the expected result (provided above).
-	•	If you have any other specific instructions to run the app please include them in the solution also.
-	•	If anything is unclear please don't hesitate to reach out to us for clarification.
-	•	We'll be looking at a number of things when assessing the solution, and we'll have the opportunity to go through it together afterwards to explain your thinking about why you made certain decisions in the code and why you approached things in a certain way.
