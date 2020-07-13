@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rover View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RoverViewController" customModule="MarsRovers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" restorationIdentifier="TopView" translatesAutoresizingMaskIntoConstraints="NO" id="5KD-61-bVv" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="319"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3w-0e-gwI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="xKn-hw-oqw"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="778-cg-o90"/>
+                                        </connections>
+                                    </pickerView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Instructions" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xeX-Xc-n4b">
+                                        <rect key="frame" x="16" y="226" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="k8j-ut-ozS"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqv-G3-Xy8" userLabel="Results">
+                                        <rect key="frame" x="16" y="309" width="343" height="0.0"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vue-2x-PHa">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Vue-2x-PHa" firstAttribute="leading" secondItem="Wqv-G3-Xy8" secondAttribute="leading" id="A1N-3W-M3u"/>
+                                            <constraint firstItem="Vue-2x-PHa" firstAttribute="top" secondItem="Wqv-G3-Xy8" secondAttribute="top" id="KQo-5K-TKq"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vue-2x-PHa" secondAttribute="trailing" id="nYW-DO-Gzl"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vue-2x-PHa" secondAttribute="bottom" id="q0e-Ch-ECB"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUn-ft-WGM">
+                                        <rect key="frame" x="16" y="266" width="343" height="33"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Execute Instructions"/>
+                                        <connections>
+                                            <action selector="executeInstructions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rBD-iK-X61"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="aUn-ft-WGM" firstAttribute="top" secondItem="xeX-Xc-n4b" secondAttribute="bottom" constant="10" id="EE0-Rr-puB"/>
+                                    <constraint firstItem="xeX-Xc-n4b" firstAttribute="leading" secondItem="5KD-61-bVv" secondAttribute="leading" constant="16" id="L3E-RS-8dc"/>
+                                    <constraint firstAttribute="trailing" secondItem="aUn-ft-WGM" secondAttribute="trailing" constant="16" id="OZr-Kf-qZc"/>
+                                    <constraint firstItem="aUn-ft-WGM" firstAttribute="leading" secondItem="5KD-61-bVv" secondAttribute="leading" constant="16" id="Pny-uc-xX6"/>
+                                    <constraint firstAttribute="trailing" secondItem="d3w-0e-gwI" secondAttribute="trailing" id="Sha-Gb-wjO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wqv-G3-Xy8" secondAttribute="bottom" constant="10" id="TLa-AW-FbP"/>
+                                    <constraint firstAttribute="trailing" secondItem="xeX-Xc-n4b" secondAttribute="trailing" constant="16" id="TzF-Z3-aQD"/>
+                                    <constraint firstItem="d3w-0e-gwI" firstAttribute="leading" secondItem="5KD-61-bVv" secondAttribute="leading" id="cRt-1O-Ivs"/>
+                                    <constraint firstItem="d3w-0e-gwI" firstAttribute="top" secondItem="5KD-61-bVv" secondAttribute="top" id="eS9-2b-vdG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wqv-G3-Xy8" secondAttribute="trailing" constant="16" id="hRL-Er-nJh"/>
+                                    <constraint firstItem="xeX-Xc-n4b" firstAttribute="top" secondItem="d3w-0e-gwI" secondAttribute="bottom" constant="10" id="id6-4o-97W"/>
+                                    <constraint firstItem="Wqv-G3-Xy8" firstAttribute="top" secondItem="aUn-ft-WGM" secondAttribute="bottom" constant="10" id="kkL-Mo-Nng"/>
+                                    <constraint firstItem="Wqv-G3-Xy8" firstAttribute="leading" secondItem="5KD-61-bVv" secondAttribute="leading" constant="16" id="wx9-UP-8MR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDx-kJ-eEK" userLabel="PlateauView" customClass="PlateauView" customModule="MarsRovers" customModuleProvider="target">
+                                <rect key="frame" x="16" y="349" width="343" height="298"/>
+                                <color key="backgroundColor" red="1" green="0.94766346232574505" blue="0.82424960069579234" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YDx-kJ-eEK" secondAttribute="height" multiplier="343:298" id="cIh-OV-7cc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5KD-61-bVv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="19H-A8-FLp"/>
+                            <constraint firstItem="5KD-61-bVv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="84S-kR-1eZ"/>
+                            <constraint firstItem="YDx-kJ-eEK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ATu-Ax-Zp6"/>
+                            <constraint firstItem="5KD-61-bVv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OFt-HF-chJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YDx-kJ-eEK" secondAttribute="bottom" constant="20" id="eX5-3R-z1l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YDx-kJ-eEK" secondAttribute="trailing" constant="16" id="h5K-tI-Tfo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label_displayResults" destination="Vue-2x-PHa" id="rAq-aR-cHh"/>
+                        <outlet property="picker_rovers" destination="d3w-0e-gwI" id="Qlb-Tm-6yG"/>
+                        <outlet property="plateau" destination="YDx-kJ-eEK" id="WVK-iG-Kfw"/>
+                        <outlet property="txt_instruction" destination="xeX-Xc-n4b" id="7Ey-iG-Jdc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-180" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>

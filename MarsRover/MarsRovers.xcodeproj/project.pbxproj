@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6363589D22CF229300F52FBE /* ErrorMessages.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6363589C22CF229300F52FBE /* ErrorMessages.strings */; };
+		6363589F22CF282D00F52FBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6363589E22CF282D00F52FBE /* Constants.swift */; };
+		636358A122CF779800F52FBE /* MockRoverPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636358A022CF779800F52FBE /* MockRoverPresenter.swift */; };
+		636358A322CF892000F52FBE /* AbstractVIPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636358A222CF892000F52FBE /* AbstractVIPView.swift */; };
+		636358A622CFCD5700F52FBE /* RoverInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636358A522CFCD5700F52FBE /* RoverInteractor.swift */; };
+		636358A922CFCD6000F52FBE /* RoverPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636358A822CFCD6000F52FBE /* RoverPresenter.swift */; };
+		636358AC22CFCE4E00F52FBE /* MovementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636358AB22CFCE4E00F52FBE /* MovementController.swift */; };
+		636358AF22CFCF2800F52FBE /* InstructableProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636358AE22CFCF2700F52FBE /* InstructableProtocols.swift */; };
+		636358B222CFCFC000F52FBE /* InstructionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636358B022CFCFC000F52FBE /* InstructionProcessor.swift */; };
+		636358B322CFCFC000F52FBE /* InstructionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636358B122CFCFC000F52FBE /* InstructionParser.swift */; };
+		6367261122CE7161008557F0 /* VIPProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367261022CE7161008557F0 /* VIPProtocols.swift */; };
+		637BA8BB22BD4CFE001FEBC3 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BA8BA22BD4CFE001FEBC3 /* Instruction.swift */; };
+		637BA8BD22BD5772001FEBC3 /* Rover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BA8BC22BD5772001FEBC3 /* Rover.swift */; };
+		637BA8C122BE2D90001FEBC3 /* MissionLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BA8C022BE2D90001FEBC3 /* MissionLauncher.swift */; };
+		63B07DEF22BB58A700179FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B07DEE22BB58A700179FCF /* AppDelegate.swift */; };
+		63B07DF122BB58A700179FCF /* RoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B07DF022BB58A700179FCF /* RoverViewController.swift */; };
+		63B07DF422BB58A700179FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B07DF222BB58A700179FCF /* Main.storyboard */; };
+		63B07DF622BB58AA00179FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B07DF522BB58AA00179FCF /* Assets.xcassets */; };
+		63B07DF922BB58AA00179FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B07DF722BB58AA00179FCF /* LaunchScreen.storyboard */; };
+		63B07E0422BB58AB00179FCF /* MarsRoverTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B07E0322BB58AB00179FCF /* MarsRoverTest.swift */; };
+		63D650E822CD3332008BDDAE /* RoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D650E722CD3332008BDDAE /* RoverView.swift */; };
+		63D650EA22CD3382008BDDAE /* PlateauView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D650E922CD3382008BDDAE /* PlateauView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63B07E0022BB58AB00179FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63B07DE322BB58A700179FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63B07DEA22BB58A700179FCF;
+			remoteInfo = MarsRover;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6363589C22CF229300F52FBE /* ErrorMessages.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ErrorMessages.strings; sourceTree = "<group>"; };
+		6363589E22CF282D00F52FBE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		636358A022CF779800F52FBE /* MockRoverPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRoverPresenter.swift; sourceTree = "<group>"; };
+		636358A222CF892000F52FBE /* AbstractVIPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractVIPView.swift; sourceTree = "<group>"; };
+		636358A522CFCD5700F52FBE /* RoverInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverInteractor.swift; sourceTree = "<group>"; };
+		636358A822CFCD6000F52FBE /* RoverPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverPresenter.swift; sourceTree = "<group>"; };
+		636358AB22CFCE4E00F52FBE /* MovementController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementController.swift; sourceTree = "<group>"; };
+		636358AE22CFCF2700F52FBE /* InstructableProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructableProtocols.swift; sourceTree = "<group>"; };
+		636358B022CFCFC000F52FBE /* InstructionProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionProcessor.swift; sourceTree = "<group>"; };
+		636358B122CFCFC000F52FBE /* InstructionParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionParser.swift; sourceTree = "<group>"; };
+		6367261022CE7161008557F0 /* VIPProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPProtocols.swift; sourceTree = "<group>"; };
+		637BA8BA22BD4CFE001FEBC3 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
+		637BA8BC22BD5772001FEBC3 /* Rover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rover.swift; sourceTree = "<group>"; };
+		637BA8C022BE2D90001FEBC3 /* MissionLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionLauncher.swift; sourceTree = "<group>"; };
+		63B07DEB22BB58A700179FCF /* MarsRovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsRovers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B07DEE22BB58A700179FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63B07DF022BB58A700179FCF /* RoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverViewController.swift; sourceTree = "<group>"; };
+		63B07DF322BB58A700179FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63B07DF522BB58AA00179FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63B07DF822BB58AA00179FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63B07DFA22BB58AA00179FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B07DFF22BB58AB00179FCF /* MarsRoversTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsRoversTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B07E0322BB58AB00179FCF /* MarsRoverTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverTest.swift; sourceTree = "<group>"; };
+		63B07E0522BB58AB00179FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63D650E722CD3332008BDDAE /* RoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverView.swift; sourceTree = "<group>"; };
+		63D650E922CD3382008BDDAE /* PlateauView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateauView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63B07DE822BB58A700179FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B07DFC22BB58AB00179FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		636358A422CFCD5700F52FBE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				636358A522CFCD5700F52FBE /* RoverInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		636358A722CFCD6000F52FBE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				636358A822CFCD6000F52FBE /* RoverPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		636358AA22CFCE3E00F52FBE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				636358B122CFCFC000F52FBE /* InstructionParser.swift */,
+				636358B022CFCFC000F52FBE /* InstructionProcessor.swift */,
+				636358AB22CFCE4E00F52FBE /* MovementController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		636358AD22CFCEF500F52FBE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6367261022CE7161008557F0 /* VIPProtocols.swift */,
+				636358AE22CFCF2700F52FBE /* InstructableProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		637BA8B922BD4CDC001FEBC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				637BA8BC22BD5772001FEBC3 /* Rover.swift */,
+				637BA8BA22BD4CFE001FEBC3 /* Instruction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		63B07DE222BB58A700179FCF = {
+			isa = PBXGroup;
+			children = (
+				63B07DED22BB58A700179FCF /* MarsRover */,
+				63B07E0222BB58AB00179FCF /* MarsRoverTests */,
+				63B07DEC22BB58A700179FCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63B07DEC22BB58A700179FCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63B07DEB22BB58A700179FCF /* MarsRovers.app */,
+				63B07DFF22BB58AB00179FCF /* MarsRoversTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63B07DED22BB58A700179FCF /* MarsRover */ = {
+			isa = PBXGroup;
+			children = (
+				63B07DEE22BB58A700179FCF /* AppDelegate.swift */,
+				637BA8C022BE2D90001FEBC3 /* MissionLauncher.swift */,
+				63B07DF022BB58A700179FCF /* RoverViewController.swift */,
+				636358AD22CFCEF500F52FBE /* Protocols */,
+				637BA8B922BD4CDC001FEBC3 /* Models */,
+				63D650E622CD331E008BDDAE /* Views */,
+				636358A422CFCD5700F52FBE /* Interactor */,
+				636358A722CFCD6000F52FBE /* Presenter */,
+				636358AA22CFCE3E00F52FBE /* Helpers */,
+				63B07DF522BB58AA00179FCF /* Assets.xcassets */,
+				63B07DFA22BB58AA00179FCF /* Info.plist */,
+				6363589C22CF229300F52FBE /* ErrorMessages.strings */,
+				6363589E22CF282D00F52FBE /* Constants.swift */,
+			);
+			path = MarsRover;
+			sourceTree = "<group>";
+		};
+		63B07E0222BB58AB00179FCF /* MarsRoverTests */ = {
+			isa = PBXGroup;
+			children = (
+				63B07E0322BB58AB00179FCF /* MarsRoverTest.swift */,
+				636358A022CF779800F52FBE /* MockRoverPresenter.swift */,
+				63B07E0522BB58AB00179FCF /* Info.plist */,
+			);
+			path = MarsRoverTests;
+			sourceTree = "<group>";
+		};
+		63D650E622CD331E008BDDAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63D650E722CD3332008BDDAE /* RoverView.swift */,
+				63D650E922CD3382008BDDAE /* PlateauView.swift */,
+				636358A222CF892000F52FBE /* AbstractVIPView.swift */,
+				63B07DF222BB58A700179FCF /* Main.storyboard */,
+				63B07DF722BB58AA00179FCF /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63B07DEA22BB58A700179FCF /* MarsRovers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63B07E0822BB58AB00179FCF /* Build configuration list for PBXNativeTarget "MarsRovers" */;
+			buildPhases = (
+				63B07DE722BB58A700179FCF /* Sources */,
+				63B07DE822BB58A700179FCF /* Frameworks */,
+				63B07DE922BB58A700179FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarsRovers;
+			productName = MarsRover;
+			productReference = 63B07DEB22BB58A700179FCF /* MarsRovers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63B07DFE22BB58AB00179FCF /* MarsRoversTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63B07E0B22BB58AB00179FCF /* Build configuration list for PBXNativeTarget "MarsRoversTests" */;
+			buildPhases = (
+				63B07DFB22BB58AB00179FCF /* Sources */,
+				63B07DFC22BB58AB00179FCF /* Frameworks */,
+				63B07DFD22BB58AB00179FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63B07E0122BB58AB00179FCF /* PBXTargetDependency */,
+			);
+			name = MarsRoversTests;
+			productName = MarsRoverTests;
+			productReference = 63B07DFF22BB58AB00179FCF /* MarsRoversTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63B07DE322BB58A700179FCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jain, Manish";
+				TargetAttributes = {
+					63B07DEA22BB58A700179FCF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					63B07DFE22BB58AB00179FCF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 63B07DEA22BB58A700179FCF;
+					};
+				};
+			};
+			buildConfigurationList = 63B07DE622BB58A700179FCF /* Build configuration list for PBXProject "MarsRovers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63B07DE222BB58A700179FCF;
+			productRefGroup = 63B07DEC22BB58A700179FCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63B07DEA22BB58A700179FCF /* MarsRovers */,
+				63B07DFE22BB58AB00179FCF /* MarsRoversTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63B07DE922BB58A700179FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B07DF922BB58AA00179FCF /* LaunchScreen.storyboard in Resources */,
+				63B07DF622BB58AA00179FCF /* Assets.xcassets in Resources */,
+				63B07DF422BB58A700179FCF /* Main.storyboard in Resources */,
+				6363589D22CF229300F52FBE /* ErrorMessages.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B07DFD22BB58AB00179FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63B07DE722BB58A700179FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636358A622CFCD5700F52FBE /* RoverInteractor.swift in Sources */,
+				636358A122CF779800F52FBE /* MockRoverPresenter.swift in Sources */,
+				636358B322CFCFC000F52FBE /* InstructionParser.swift in Sources */,
+				636358AC22CFCE4E00F52FBE /* MovementController.swift in Sources */,
+				6367261122CE7161008557F0 /* VIPProtocols.swift in Sources */,
+				637BA8BD22BD5772001FEBC3 /* Rover.swift in Sources */,
+				636358AF22CFCF2800F52FBE /* InstructableProtocols.swift in Sources */,
+				63D650EA22CD3382008BDDAE /* PlateauView.swift in Sources */,
+				636358B222CFCFC000F52FBE /* InstructionProcessor.swift in Sources */,
+				636358A922CFCD6000F52FBE /* RoverPresenter.swift in Sources */,
+				637BA8C122BE2D90001FEBC3 /* MissionLauncher.swift in Sources */,
+				637BA8BB22BD4CFE001FEBC3 /* Instruction.swift in Sources */,
+				63B07DF122BB58A700179FCF /* RoverViewController.swift in Sources */,
+				63B07DEF22BB58A700179FCF /* AppDelegate.swift in Sources */,
+				6363589F22CF282D00F52FBE /* Constants.swift in Sources */,
+				63D650E822CD3332008BDDAE /* RoverView.swift in Sources */,
+				636358A322CF892000F52FBE /* AbstractVIPView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B07DFB22BB58AB00179FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B07E0422BB58AB00179FCF /* MarsRoverTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63B07E0122BB58AB00179FCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63B07DEA22BB58A700179FCF /* MarsRovers */;
+			targetProxy = 63B07E0022BB58AB00179FCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63B07DF222BB58A700179FCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63B07DF322BB58A700179FCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63B07DF722BB58AA00179FCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63B07DF822BB58AA00179FCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63B07E0622BB58AB00179FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63B07E0722BB58AB00179FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63B07E0922BB58AB00179FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ND7D55DQDU;
+				INFOPLIST_FILE = MarsRover/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mars.rover.MarsRover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		63B07E0A22BB58AB00179FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ND7D55DQDU;
+				INFOPLIST_FILE = MarsRover/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mars.rover.MarsRover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		63B07E0C22BB58AB00179FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ND7D55DQDU;
+				INFOPLIST_FILE = MarsRoverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mars.rover.MarsRoverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarsRovers.app/MarsRovers";
+			};
+			name = Debug;
+		};
+		63B07E0D22BB58AB00179FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ND7D55DQDU;
+				INFOPLIST_FILE = MarsRoverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mars.rover.MarsRoverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarsRovers.app/MarsRovers";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63B07DE622BB58A700179FCF /* Build configuration list for PBXProject "MarsRovers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B07E0622BB58AB00179FCF /* Debug */,
+				63B07E0722BB58AB00179FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63B07E0822BB58AB00179FCF /* Build configuration list for PBXNativeTarget "MarsRovers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B07E0922BB58AB00179FCF /* Debug */,
+				63B07E0A22BB58AB00179FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63B07E0B22BB58AB00179FCF /* Build configuration list for PBXNativeTarget "MarsRoversTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B07E0C22BB58AB00179FCF /* Debug */,
+				63B07E0D22BB58AB00179FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63B07DE322BB58A700179FCF /* Project object */;
+}

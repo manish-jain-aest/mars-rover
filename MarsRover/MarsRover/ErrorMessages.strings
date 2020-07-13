@@ -1,0 +1,12 @@
+/* 
+  ErrorMessages.strings
+  MarsRovers
+
+  Created by Jain, Manish on 05/07/19.
+  Copyright © 2019 Jain, Manish. All rights reserved.
+*/
+
+"InvalidInstruction" = "Invalid instruction. Valid instructions are %@";
+"RiskOfCollision" = "Given instructions can collide rover with another";
+"LocationOutOfBounds" = "Given instructions can take rover out of the plateau";
+"UnknownErrorInstructionMessage" = "Unknown error occured";
