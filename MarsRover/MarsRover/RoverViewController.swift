@@ -55,7 +55,10 @@ class RoverViewController: UIViewController, VIPView {
         
         for opportunity in rovers {
             let opportunityView = CircularRoverView(rover:opportunity ,radius: 20)
-            opportunityView.center = self.plateau.getLocationInPlateau(newLocation: opportunity.currentPosition.location)
+            
+            DispatchQueue.main.async {
+                opportunityView.center = self.plateau.getLocationInPlateau(newLocation: opportunity.currentPosition.location)
+            }
             
             /* Temporary patch to distinguish rovers by color. Can be taken as input */
             if opportunity.name == "Opportunity" {opportunityView.roverColor = UIColor.red}
